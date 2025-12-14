@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['NotePad.py'],
+    ['MiniNote.py'],
     pathex=[],
     binaries=[],
     datas=[('images', 'images'), ('Note.txt', '.')],
@@ -39,5 +39,6 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='NotePad',
+    name='MiniNote',
 )
+
