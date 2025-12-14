@@ -20,7 +20,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='NotePad',
+    name='MiniNote',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -41,4 +41,5 @@ coll = COLLECT(
     upx_exclude=[],
     name='MiniNote',
 )
+
 
