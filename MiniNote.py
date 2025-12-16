@@ -2,7 +2,7 @@
 """
 Created on Sun Apr  7 21:02:07 2024
 
-@author: Alamentine
+@author: Cas Holley
 """
 from typing import Optional
 from tkinter import filedialog
@@ -170,3 +170,4 @@ class Note(tk.Tk):
 
 note = Note()
 note.mainloop()
+
