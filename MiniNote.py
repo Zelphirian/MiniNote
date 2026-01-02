@@ -21,7 +21,7 @@ class Note(tk.Tk):
             except Exception:
                 base_path = os.path.abspath(".")
             return os.path.join(base_path, relative_path)
-        
+        #Loads all visual elements of MiniNote
         super().__init__()
         self.overrideredirect(True)
         self.geometry("250x200+1665+835")
@@ -79,7 +79,7 @@ class Note(tk.Tk):
         self.autoLoad()
         
 
-        
+     #Tracks movement of Note for dragging across desktop  
     def OnMotion(self, event):
         x1 = self.winfo_pointerx()
         y1 = self.winfo_pointery()
@@ -121,7 +121,8 @@ class Note(tk.Tk):
          #   self.save_as()
          #   return
         self.save_current_file()
-
+  
+   # Not currently IN USE
     def save_as(self) -> None:
         filename = filedialog.asksaveasfilename(
             defaultextension=".txt",
@@ -170,4 +171,5 @@ class Note(tk.Tk):
 
 note = Note()
 note.mainloop()
+
 
